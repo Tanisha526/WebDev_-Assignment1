@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        .container{
+            display: flex;
+            margin: 80px auto;
+            /*justify-content: center;
+             align-items: center; */
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 50px;
+            width: 600px;
+            height: 450px;
+            padding: 40px;
+            
+        } 
+        .left{
+            flex: 2;
+        }
+        .right{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        body{
+            background-image: url('Bg image1.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+        }
+        label{ 
+            display: block;
+            margin-top: 20px;
+            
+        }
+        input{
+            background-color: rgba(248, 200, 255, 0.3);
+        }
+        textarea{
+            background-color: rgba(248, 200, 225, 0.7);
+        }
+        .links {
+            width: 700px;
+            margin: 20px auto 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .links img {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            border-radius: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+     <div class = "container">
+        <div class="left">
+            <h1>
+                 Hey!<br>
+                 I'm <span> John Doe </span>  
+            </h1>
+            <p style="display:block; margin-right: 80px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ipsam adipisci vero hic earum. Numquam similique mollitia 
+                qui officiis exercitationem explicabo beatae eaque culpa!
+            </p>
+            <form action="/action_page.php" method="post">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="Message" rows="3" placeholder="Type here if you have any questions for me."></textarea>
+
+                    <label for="name">Full name:</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="emailId">Email:</label>
+                    <input type="email" id="emailId" name="emailId">
+
+                    <button type="submit">Submit</button>
+                </form>
+
+            
+        </div>
+        <div class="right">
+            <img  style = "border-radius:50px; border-style: groove; border-color: rgb(235, 70, 232);" 
+             src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=160" alt="Profile img" height="160">
+
+            <table style="margin-top:10px; width:100%; text-align:left;">
+                <tr>
+                    <th>Role</th>
+                    <td>Web Developer</td>
+                </tr>
+                <tr>
+                    <th>Location</th>
+                    <td>India</td>
+                </tr>
+                </table> 
+
+            <h3 style="margin-top:50px; margin-bottom: 5px;">Skills</h3>
+                <ul style="margin-top: 5px; padding-left: 20px;">
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>Responsive Design</li>
+                </ul>
+        </div>    
+    </div>
+    <div class="links">
+        <a href="#" target="_blank"><img src="github_logo.webp">
+        </a>
+        <a href="#" target="_blank"><img src="gmail_logo.jpg">
+        </a>
+        <a href="#" target="_blank"><img src="linkedin_logo.png">
+        </a>
+    </div>
+
+</body>
+</html>
